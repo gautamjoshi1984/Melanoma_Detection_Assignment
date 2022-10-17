@@ -1,6 +1,8 @@
 # Melanoma Detection Assignment
 > This mini project is to build a predictive model using convolutional neural network model to predict a form of Skin cancer called Melanoma which is one of the most deadliest form of Skin Cancer. The objective of this project is to build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
+
+
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
@@ -11,6 +13,8 @@
 
 ## General Information
 - This assignment uses a dataset of about 2357 images of skin cancer types provided by Upgrad as a part of the assignment. The dataset contains 9 sub-directories in each train and test subdirectories. The 9 sub-directories contains the images of 9 skin cancer types respectively. The predictive model should be trained on the train dataset and validated using a subset of the train dataset (test data). 
+- This solution aims to assist the medical practitioners and dermatologists to do pre-checks before asking the patients to go for a biopsy or a medical tests. It doesn't aim to replace the medical tests. 
+- Good thing is that by just looking at the images the model should be able to predict if it's Melanoma or some other skin related issue (out of the 9 classes). 
 
 Steps followed in this assignment.
 
