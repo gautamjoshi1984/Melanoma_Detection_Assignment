@@ -1,6 +1,5 @@
-# Project Name
-> Outline a brief description of your project.
-
+# Melanoma Detection Assignment
+> This mini project is to build a predictive model using convolutional neural network model to predict a form of Skin cancer called Melanoma which is one of the most deadliest form of Skin Cancer. The objective of this project is to build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -11,38 +10,46 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- This assignment uses a dataset of about 2357 images of skin cancer types. The dataset contains 9 sub-directories in each train and test subdirectories. The 9 sub-directories contains the images of 9 skin cancer types respectively. Steps followed in this assignment. 
+1. Import the images and visualize them
+2. Convert the images to Tensorflow dataset (Preprocessing)
+3. Build a basic CNN model --> Observation 
+4. Add overfitting measures like Data augmentation, Dropouts etc.
+5. Build another model with new components to control overfitting ---> Observation
+6. Analzye the Class imbalance issue in the dataset
+7. Use Augmentor pipeline to generate new images for training purposes to resolve the class imblance issues. 
+8. Build a CNN model and test the same with the newly generated data. --> Observations
+9. Final observation and conclusion. 
+
+## Technologies Used
+- Tensorflow v2.9.2
+- Keras v2.9.0
+- Matplotlib v3.2.2
+- Seaborn v0.11.2
+- Numpy v1.21.6
+- Pandas v1.3.5
+- Augmentor v0.2.10
+- Python packages OS,PIL etc.
+- Google Colab
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- We were able to build a model with 82.6% test accuracy i.e. the model was able to correctly predict 82.6% of the images into correct classes. 
+- Below is our final model
+
+![image](https://user-images.githubusercontent.com/28692811/196173619-c01e7dbe-99e1-4dcb-9179-0beb0b487c83.png)
+
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- This project was inspired by the online tutorials and live sessions conducted by the Upgrad and IIIT B faculty.
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@gautamjoshi1984] - feel free to contact me!
 
 
 <!-- Optional -->
