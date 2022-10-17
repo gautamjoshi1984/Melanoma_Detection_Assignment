@@ -10,16 +10,19 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- This assignment uses a dataset of about 2357 images of skin cancer types. The dataset contains 9 sub-directories in each train and test subdirectories. The 9 sub-directories contains the images of 9 skin cancer types respectively. Steps followed in this assignment. 
-1. Import the images and visualize them
-2. Convert the images to Tensorflow dataset (Preprocessing)
-3. Build a basic CNN model --> Observation 
+- This assignment uses a dataset of about 2357 images of skin cancer types provided by Upgrad as a part of the assignment. The dataset contains 9 sub-directories in each train and test subdirectories. The 9 sub-directories contains the images of 9 skin cancer types respectively. The predictive model should be trained on the train dataset and validated using a subset of the train dataset (test data). 
+
+Steps followed in this assignment.
+
+1. Import the images and visualize them (EDA)
+2. Convert the images to Tensorflow dataset (Preprocessing, Scaling etc.)
+3. Build a basic CNN model --> Observation from the model 
 4. Add overfitting measures like Data augmentation, Dropouts etc.
-5. Build another model with new components to control overfitting ---> Observation
+5. Build another model with new components to control overfitting ---> Observation from the model 
 6. Analzye the Class imbalance issue in the dataset
 7. Use Augmentor pipeline to generate new images for training purposes to resolve the class imblance issues. 
-8. Build a CNN model and test the same with the newly generated data. --> Observations
-9. Final observation and conclusion. 
+8. Build a CNN model and test the same with the newly generated data. --> Observations from the model 
+9. Final observation and conclusion.
 
 ## Technologies Used
 - Tensorflow v2.9.2
@@ -35,7 +38,7 @@
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- We were able to build a model with 82.6% test accuracy i.e. the model was able to correctly predict 82.6% of the images into correct classes. 
+- First basic CNN model which was overfitting. In the second model we applied overfitting measures like Data augmentation, Dropouts and Batch normalization. But the second model resulted in very low training accuracy i.e. underfitting. Finally, we used the Augmentor to generate more images to fix the class imbalance issue. Using the new and the old dataset for training the final model, we were able to get 82.6% test accuracy i.e. the model was able to correctly predict 82.6% of the images into correct classes. 
 - Below is our final model
 
 ![image](https://user-images.githubusercontent.com/28692811/196173619-c01e7dbe-99e1-4dcb-9179-0beb0b487c83.png)
@@ -46,7 +49,7 @@
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-- This project was inspired by the online tutorials and live sessions conducted by the Upgrad and IIIT B faculty.
+- This project was inspired by the online tutorials and live sessions conducted by the Upgrad and IIIT(B) faculty.
 
 ## Contact
 Created by [@gautamjoshi1984] - feel free to contact me!
